@@ -1,0 +1,44 @@
+<html>
+  <style type="text/css">
+    html {
+      border: 1px dashed green;
+    }
+
+    body {
+      border: 1px dashed purple;
+    }
+
+    #first {
+      width: 200px;
+      height: 100px;
+      border: 1px solid red;
+      /* relative相对于body定位 */
+      position: relative;
+      left: 10px;
+      top: 10px;
+    }
+    #father {
+      width: 500px;
+      height: 500px;
+      border: 2px solid black;
+      /* position: static; */
+    }
+
+    #second {
+      width: 200px;
+      height: 100px;
+      border: 1px solid blue;
+      /* absolute相对于html定位 */
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
+
+  <body>
+    <div id="first">relative</div>
+    <div id="father">
+      <h1 id="second">absoult</h1>
+    </div>
+  </body>
+</html>
